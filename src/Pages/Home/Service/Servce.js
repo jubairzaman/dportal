@@ -20,9 +20,9 @@ const Servce = (props) => {
     return (
 
 
-        <Grid item xs={2} sm={4} md={4} >
-            <Box sx={{ minWidth: 275 }}>
-                <Card variant="outlined"><React.Fragment>
+        <Grid item xs={4} sm={4} md={4} >
+            <Box >
+                <Card sx={{ minWidth: 275 , border:0, boxShadow:0 }} ><React.Fragment>
                     <CardContent>
                         <CardMedia
                             component="img"
@@ -33,16 +33,14 @@ const Servce = (props) => {
                         <Typography variant="h5" component="div">
 
                         </Typography>
-                        <Typography sx={{ mb: 1.5 }} color="text.secondary">
+                        <Typography sx={{ mb: 1.5 }} >
                             {name}
                         </Typography>
-                        <Typography variant="body2">
+                        <Typography variant="body2" color="text.secondary">
                             {description}
                         </Typography>
                     </CardContent>
-                    <CardActions>
-                        <Button size="small">Learn More</Button>
-                    </CardActions>
+                    
                 </React.Fragment></Card>
             </Box>
         </Grid>
